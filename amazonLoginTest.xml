@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="6">
+  <test name="Test1">
+  	<parameter name="emailid" value=""></parameter>
+  	<parameter name="emailidc" value="blank"></parameter>
+  	<parameter name="pwd" value="pran_143"></parameter>
+  	<parameter name="pwdc" value="valid"></parameter>
+    <classes>
+      <class name="tests.AmazonLoginTest"/>
+    </classes>
+  </test>
+  <test name="Test2">
+  	<parameter name="emailid" value="shw"></parameter>
+  	<parameter name="emailidc" value="invalid_emailid"></parameter>
+  	<parameter name="pwd" value="pran_143"></parameter>
+  	<parameter name="pwdc" value="valid"></parameter>
+    <classes>
+      <class name="tests.AmazonLoginTest"/>
+    </classes>
+  </test>
+  <test name="Test3">
+  	<parameter name="emailid" value="9030"></parameter>
+  	<parameter name="emailidc" value="invalid_mbno"></parameter>
+  	<parameter name="pwd" value="pran_143"></parameter>
+  	<parameter name="pwdc" value="valid"></parameter>
+    <classes>
+      <class name="tests.AmazonLoginTest"/>
+    </classes>
+  </test>
+  <test name="Test4">
+  	<parameter name="emailid" value="9986007114"></parameter>
+  	<parameter name="emailidc" value="valid"></parameter>
+  	<parameter name="pwd" value=""></parameter>
+  	<parameter name="pwdc" value="blank"></parameter>
+    <classes>
+      <class name="tests.AmazonLoginTest"/>
+    </classes>
+  </test>
+  <test name="Test5">
+  	<parameter name="emailid" value="9986007114"></parameter>
+  	<parameter name="emailidc" value="valid"></parameter>
+  	<parameter name="pwd" value="shwetha"></parameter>
+  	<parameter name="pwdc" value="invalid"></parameter>
+    <classes>
+      <class name="tests.AmazonLoginTest"/>
+    </classes>
+  </test>
+  <test name="Test6">
+  	<parameter name="emailid" value="9986007114"></parameter>
+  	<parameter name="emailidc" value="valid"></parameter>
+  	<parameter name="pwd" value="pran_143"></parameter>
+  	<parameter name="pwdc" value="valid"></parameter>
+    <classes>
+      <class name="tests.AmazonLoginTest"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Invalid email test passed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="57285" started-at="2020-11-13T01:34:40 IST" finished-at="2020-11-13T01:35:37 IST">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="57285" started-at="2020-11-13T01:34:40 IST" finished-at="2020-11-13T01:35:37 IST">
+      <class name="tests.AmazonLoginTestDataProviderExcel">
+        <test-method status="PASS" signature="launchSite()[pri:1, instance:tests.AmazonLoginTestDataProviderExcel@17d677df]" name="launchSite" duration-ms="36972" started-at="2020-11-13T01:34:40 IST" finished-at="2020-11-13T01:35:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="loginOperation(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.AmazonLoginTestDataProviderExcel@17d677df]" name="loginOperation" duration-ms="9884" started-at="2020-11-13T01:35:26 IST" data-provider="testdata" finished-at="2020-11-13T01:35:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gattu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid_emailid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gatturohan@134]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid email test passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method status="PASS" signature="closeSite()[pri:3, instance:tests.AmazonLoginTestDataProviderExcel@17d677df]" name="closeSite" duration-ms="995" started-at="2020-11-13T01:35:36 IST" finished-at="2020-11-13T01:35:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSite -->
+      </class> <!-- tests.AmazonLoginTestDataProviderExcel -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Suite -->
+</testng-results>
