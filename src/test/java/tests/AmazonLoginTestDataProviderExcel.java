@@ -9,6 +9,7 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
@@ -200,5 +201,16 @@ public class AmazonLoginTestDataProviderExcel
 	{
 		//Close site
 		driver.close();
+	}
+	
+	//Automating Results file
+	//@AfterSuite
+	public void openResults()
+	{
+		WebDriverManager.chromedriver().setup();
+		RemoteWebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("E:\\Automation\\AutomationNested\\com.tddtestng.gui.facebook\\test-output\\index.html");
+		driver.findElement(By.xpath("//*[text()='Reporter output']")).click();
 	}
 }
