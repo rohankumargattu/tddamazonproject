@@ -59,6 +59,15 @@ public class AmazonLoginTestDataProviderExcel
 			data[i-1][2]=df.formatCellValue(sh.getRow(i).getCell(2));
 			data[i-1][3]=df.formatCellValue(sh.getRow(i).getCell(3));
 		}
+		/*for(int i=1;i<nour;i++)
+		{
+			for(int j=0;j<nouc;j++)
+			{
+				DataFormatter df=new DataFormatter();
+				data[i-1][j]=df.formatCellValue(sh.getRow(i).getCell(j));
+			}
+		}*/
+		fi.close();
 		wb.close();
 		//Return array
 		return(data);
