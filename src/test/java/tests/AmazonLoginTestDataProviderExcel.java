@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -73,7 +75,7 @@ public class AmazonLoginTestDataProviderExcel
 		return(data);
 	}
 	
-	@Test(priority=1)
+	@BeforeMethod
 	public void launchSite()
 	{
 		//Launch browser
@@ -90,12 +92,12 @@ public class AmazonLoginTestDataProviderExcel
 		lgoutp=new Logoutpage(driver);
 		pp=new Passwordpage(driver);
 		wait.until(ExpectedConditions.visibilityOf(hp.signin));
-		hp.clickSignin();
 	}
 	
-	@Test(priority=2,dataProvider="testdata")
+	@Test(priority=1,dataProvider="testdata")
 	public void loginOperation(String e,String ec,String p,String pc) throws Exception
 	{
+		hp.clickSignin();
 		wait.until(ExpectedConditions.visibilityOf(lginp.emailid));
 		lginp.fillEmailID(e);
 		wait.until(ExpectedConditions.elementToBeClickable(lginp.continuebtn));
@@ -179,7 +181,7 @@ public class AmazonLoginTestDataProviderExcel
 				File src=driver.getScreenshotAs(OutputType.FILE);
 				File dest=new File(ssname);
 				FileHandler.copy(src,dest);
-				Reporter.log("Valid email/phone test failed and verify "+dest.getAbsolutePath());
+				Reporter.log("Valid email/phone test failed");
 				String code="<img src=\"file:///"+dest.getAbsolutePath()+"\" alt=\"\"/>";
 				//String code="<a href=\""+dest.getAbsolutePath()+"\"><img src=\""+dest.getAbsolutePath()+"\" height=\"\" width=\"\"/></a>";
 				Reporter.log(code);
@@ -193,7 +195,7 @@ public class AmazonLoginTestDataProviderExcel
 		}
 	}
 	
-	@Test(priority=3)
+	@AfterMethod
 	public void closeSite()
 	{
 		//Close site

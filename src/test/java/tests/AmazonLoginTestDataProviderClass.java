@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -30,7 +32,7 @@ public class AmazonLoginTestDataProviderClass
 	Logoutpage lgoutp;
 	Passwordpage pp;
 	
-	@Test(priority=1)
+	@BeforeMethod
 	public void launchSite()
 	{
 		//Launch browser
@@ -47,12 +49,12 @@ public class AmazonLoginTestDataProviderClass
 		lgoutp=new Logoutpage(driver);
 		pp=new Passwordpage(driver);
 		wait.until(ExpectedConditions.visibilityOf(hp.signin));
-		hp.clickSignin();
 	}
 	
-	@Test(priority=2,dataProviderClass=AmazonLoginTestDataProvider.class,dataProvider="testdata")
+	@Test(priority=1,dataProviderClass=AmazonLoginTestDataProvider.class,dataProvider="testdata")
 	public void loginOperation(String e,String ec,String p,String pc) throws Exception
 	{
+		hp.clickSignin();
 		wait.until(ExpectedConditions.visibilityOf(lginp.emailid));
 		lginp.fillEmailID(e);
 		wait.until(ExpectedConditions.elementToBeClickable(lginp.continuebtn));
@@ -150,7 +152,7 @@ public class AmazonLoginTestDataProviderClass
 		}
 	}
 	
-	@Test(priority=3)
+	@AfterMethod
 	public void closeSite()
 	{
 		//Close site
