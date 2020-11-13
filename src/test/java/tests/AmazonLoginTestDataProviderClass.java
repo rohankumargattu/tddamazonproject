@@ -115,7 +115,7 @@ public class AmazonLoginTestDataProviderClass
 						File src=driver.getScreenshotAs(OutputType.FILE);
 						File dest=new File(ssname);
 						FileHandler.copy(src,dest);
-						Reporter.log("Valid pwd test failed and verify "+dest.getAbsolutePath());
+						Reporter.log("Valid pwd test failed");
 						String code="<img src=\"file:///"+dest.getAbsolutePath()+"\" alt=\"\"/>";
 						//String code="<a href=\""+dest.getAbsolutePath()+"\"><img src=\""+dest.getAbsolutePath()+"\" height=\"\" width=\"\"/></a>";
 						Reporter.log(code);
