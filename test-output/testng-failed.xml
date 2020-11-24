@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="6" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="6" name="Test3(failed)" parallel="tests">
+    <parameter name="emailidc" value="invalid_mbno"/>
+    <parameter name="pwdc" value="valid"/>
+    <parameter name="emailid" value="9030"/>
+    <parameter name="pwd" value="pran_143"/>
     <classes>
-      <class name="tests.AmazonLoginTestDataProviderExcel">
+      <class name="tests.AmazonLoginTest">
         <methods>
-          <include name="loginOperation"/>
+          <include name="loginOperation" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.AmazonLoginTestDataProviderExcel -->
+      </class> <!-- tests.AmazonLoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test3(failed) -->
+  <test thread-count="6" name="Test2(failed)" parallel="tests">
+    <parameter name="emailidc" value="invalid_emailid"/>
+    <parameter name="pwdc" value="valid"/>
+    <parameter name="emailid" value="shw"/>
+    <parameter name="pwd" value="pran_143"/>
+    <classes>
+      <class name="tests.AmazonLoginTest">
+        <methods>
+          <include name="loginOperation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.AmazonLoginTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="6" name="Test6(failed)" parallel="tests">
+    <parameter name="emailidc" value="valid"/>
+    <parameter name="pwdc" value="valid"/>
+    <parameter name="emailid" value="9986007114"/>
+    <parameter name="pwd" value="pran_143"/>
+    <classes>
+      <class name="tests.AmazonLoginTest">
+        <methods>
+          <include name="loginOperation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.AmazonLoginTest -->
+    </classes>
+  </test> <!-- Test6(failed) -->
+</suite> <!-- Failed suite [Suite] -->

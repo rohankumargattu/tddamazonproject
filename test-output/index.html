@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\Automation\AutomationNested\com.tddtestng.gui.amazon\amazonLoginTestDataProviderExcel.xml</span>
+                    <span>E:\Automation\AutomationNested\com.tddtestng.gui.amazon\amazonLoginTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">18 methods, 3 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="loginOperation(9030, invalid_mbno, pran_143, valid)">loginOperation(9030, invalid_mbno, pran_143, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="loginOperation(shw, invalid_emailid, pran_143, valid)">loginOperation(shw, invalid_emailid, pran_143, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="loginOperation(9986007114, valid, pran_143, valid)">loginOperation(9986007114, valid, pran_143, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +128,77 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTestDataProviderExcel" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTestDataProviderExcel" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTestDataProviderExcel" hash-for-method="loginOperation(gattu, invalid_emailid, Gatturohan@134, valid)">loginOperation(gattu, invalid_emailid, Gatturohan@134, valid)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="closeSite">closeSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="launchSite">launchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="loginOperation(, blank, pran_143, valid)">loginOperation(, blank, pran_143, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="loginOperation(9986007114, valid, shwetha, invalid)">loginOperation(9986007114, valid, shwetha, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.AmazonLoginTest" hash-for-method="loginOperation(9986007114, valid, , blank)">loginOperation(9986007114, valid, , blank)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -129,12 +213,106 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AmazonLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginOperation(9030, invalid_mbno, pran_143, valid)">
+                  </a> <!-- loginOperation(9030, invalid_mbno, pran_143, valid) -->
+                  <span class="method-name">loginOperation</span>
+                  <span class="parameters">(9030, invalid_mbno, pran_143, valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.AmazonLoginTest.loginOperation(AmazonLoginTest.java:152)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginOperation(shw, invalid_emailid, pran_143, valid)">
+                  </a> <!-- loginOperation(shw, invalid_emailid, pran_143, valid) -->
+                  <span class="method-name">loginOperation</span>
+                  <span class="parameters">(shw, invalid_emailid, pran_143, valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.AmazonLoginTest.loginOperation(AmazonLoginTest.java:152)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginOperation(9986007114, valid, pran_143, valid)">
+                  </a> <!-- loginOperation(9986007114, valid, pran_143, valid) -->
+                  <span class="method-name">loginOperation</span>
+                  <span class="parameters">(9986007114, valid, pran_143, valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.AmazonLoginTest.loginOperation(AmazonLoginTest.java:146)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.AmazonLoginTestDataProviderExcel</span>
+              <span class="class-name">tests.AmazonLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeSite">
+                  </a> <!-- closeSite -->
+                  <span class="method-name">closeSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeSite">
+                  </a> <!-- closeSite -->
+                  <span class="method-name">closeSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeSite">
+                  </a> <!-- closeSite -->
+                  <span class="method-name">closeSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeSite">
+                  </a> <!-- closeSite -->
+                  <span class="method-name">closeSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeSite">
+                  </a> <!-- closeSite -->
+                  <span class="method-name">closeSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="closeSite">
@@ -151,10 +329,61 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginOperation(gattu, invalid_emailid, Gatturohan@134, valid)">
-                  </a> <!-- loginOperation(gattu, invalid_emailid, Gatturohan@134, valid) -->
+                  <a name="launchSite">
+                  </a> <!-- launchSite -->
+                  <span class="method-name">launchSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchSite">
+                  </a> <!-- launchSite -->
+                  <span class="method-name">launchSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchSite">
+                  </a> <!-- launchSite -->
+                  <span class="method-name">launchSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchSite">
+                  </a> <!-- launchSite -->
+                  <span class="method-name">launchSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchSite">
+                  </a> <!-- launchSite -->
+                  <span class="method-name">launchSite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginOperation(, blank, pran_143, valid)">
+                  </a> <!-- loginOperation(, blank, pran_143, valid) -->
                   <span class="method-name">loginOperation</span>
-                  <span class="parameters">(gattu, invalid_emailid, Gatturohan@134, valid)</span>
+                  <span class="parameters">(, blank, pran_143, valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginOperation(9986007114, valid, shwetha, invalid)">
+                  </a> <!-- loginOperation(9986007114, valid, shwetha, invalid) -->
+                  <span class="method-name">loginOperation</span>
+                  <span class="parameters">(9986007114, valid, shwetha, invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginOperation(9986007114, valid, , blank)">
+                  </a> <!-- loginOperation(9986007114, valid, , blank) -->
+                  <span class="method-name">loginOperation</span>
+                  <span class="parameters">(9986007114, valid, , blank)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,18 +391,67 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Automation\AutomationNested\com.tddtestng.gui.amazon\amazonLoginTestDataProviderExcel.xml</span>
+            <span class="header-content">E:\Automation\AutomationNested\com.tddtestng.gui.amazon\amazonLoginTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
+&lt;suite thread-count=&quot;6&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;6&quot; name=&quot;Test1&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;emailidc&quot; value=&quot;blank&quot;/&gt;
+    &lt;parameter name=&quot;pwdc&quot; value=&quot;valid&quot;/&gt;
+    &lt;parameter name=&quot;emailid&quot; value=&quot;&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;pran_143&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.AmazonLoginTestDataProviderExcel&quot;/&gt;
+      &lt;class name=&quot;tests.AmazonLoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;6&quot; name=&quot;Test2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;emailidc&quot; value=&quot;invalid_emailid&quot;/&gt;
+    &lt;parameter name=&quot;pwdc&quot; value=&quot;valid&quot;/&gt;
+    &lt;parameter name=&quot;emailid&quot; value=&quot;shw&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;pran_143&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AmazonLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;6&quot; name=&quot;Test3&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;emailidc&quot; value=&quot;invalid_mbno&quot;/&gt;
+    &lt;parameter name=&quot;pwdc&quot; value=&quot;valid&quot;/&gt;
+    &lt;parameter name=&quot;emailid&quot; value=&quot;9030&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;pran_143&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AmazonLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test thread-count=&quot;6&quot; name=&quot;Test4&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;emailidc&quot; value=&quot;valid&quot;/&gt;
+    &lt;parameter name=&quot;pwdc&quot; value=&quot;blank&quot;/&gt;
+    &lt;parameter name=&quot;emailid&quot; value=&quot;9986007114&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AmazonLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test4 --&gt;
+  &lt;test thread-count=&quot;6&quot; name=&quot;Test5&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;emailidc&quot; value=&quot;valid&quot;/&gt;
+    &lt;parameter name=&quot;pwdc&quot; value=&quot;invalid&quot;/&gt;
+    &lt;parameter name=&quot;emailid&quot; value=&quot;9986007114&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;shwetha&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AmazonLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test5 --&gt;
+  &lt;test thread-count=&quot;6&quot; name=&quot;Test6&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;emailidc&quot; value=&quot;valid&quot;/&gt;
+    &lt;parameter name=&quot;pwdc&quot; value=&quot;valid&quot;/&gt;
+    &lt;parameter name=&quot;emailid&quot; value=&quot;9986007114&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;pran_143&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AmazonLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test6 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,7 +463,22 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Test (1 class)</span>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test4 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test5 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test6 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -211,24 +504,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'launchSite')
-data.setCell(0, 2, 'tests.AmazonLoginTestDataProviderExcel')
-data.setCell(0, 3, 36972);
+data.setCell(0, 2, 'tests.AmazonLoginTest')
+data.setCell(0, 3, 37219);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginOperation')
-data.setCell(1, 2, 'tests.AmazonLoginTestDataProviderExcel')
-data.setCell(1, 3, 9884);
+data.setCell(1, 1, 'launchSite')
+data.setCell(1, 2, 'tests.AmazonLoginTest')
+data.setCell(1, 3, 27878);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'closeSite')
-data.setCell(2, 2, 'tests.AmazonLoginTestDataProviderExcel')
-data.setCell(2, 3, 995);
+data.setCell(2, 1, 'launchSite')
+data.setCell(2, 2, 'tests.AmazonLoginTest')
+data.setCell(2, 3, 26789);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'launchSite')
+data.setCell(3, 2, 'tests.AmazonLoginTest')
+data.setCell(3, 3, 24265);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'launchSite')
+data.setCell(4, 2, 'tests.AmazonLoginTest')
+data.setCell(4, 3, 22930);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'launchSite')
+data.setCell(5, 2, 'tests.AmazonLoginTest')
+data.setCell(5, 3, 17884);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginOperation')
+data.setCell(6, 2, 'tests.AmazonLoginTest')
+data.setCell(6, 3, 15975);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginOperation')
+data.setCell(7, 2, 'tests.AmazonLoginTest')
+data.setCell(7, 3, 13675);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginOperation')
+data.setCell(8, 2, 'tests.AmazonLoginTest')
+data.setCell(8, 3, 12125);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginOperation')
+data.setCell(9, 2, 'tests.AmazonLoginTest')
+data.setCell(9, 3, 5353);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginOperation')
+data.setCell(10, 2, 'tests.AmazonLoginTest')
+data.setCell(10, 3, 5308);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginOperation')
+data.setCell(11, 2, 'tests.AmazonLoginTest')
+data.setCell(11, 3, 4801);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'closeSite')
+data.setCell(12, 2, 'tests.AmazonLoginTest')
+data.setCell(12, 3, 793);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'closeSite')
+data.setCell(13, 2, 'tests.AmazonLoginTest')
+data.setCell(13, 3, 524);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'closeSite')
+data.setCell(14, 2, 'tests.AmazonLoginTest')
+data.setCell(14, 3, 356);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'closeSite')
+data.setCell(15, 2, 'tests.AmazonLoginTest')
+data.setCell(15, 3, 115);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'closeSite')
+data.setCell(16, 2, 'tests.AmazonLoginTest')
+data.setCell(16, 3, 94);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'closeSite')
+data.setCell(17, 2, 'tests.AmazonLoginTest')
+data.setCell(17, 3, 74);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -240,9 +593,58 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">loginOperation(gattu, invalid_emailid, Gatturohan@134, valid)</span>
+              <span class="reporter-method-name">loginOperation(9030, invalid_mbno, pran_143, valid)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Invalid email test passed</span>
+                <span class="reporter-method-output">no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'We cannot find an account with that mobile number')]"}
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D8HNM4S', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\gattu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 29dd000b9e2cc891b7664bb99a4a4768
+*** Element info: {Using=xpath, value=//*[contains(text(),'We cannot find an account with that mobile number')]}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginOperation(, blank, pran_143, valid)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Blank email/phone test passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginOperation(shw, invalid_emailid, pran_143, valid)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'We cannot find an account with that email address')]"}
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-D8HNM4S', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\gattu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51959}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b33a39ef142c7cff32a6d5b431dc0d30
+*** Element info: {Using=xpath, value=//*[contains(text(),'We cannot find an account with that email address')]}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginOperation(9986007114, valid, shwetha, invalid)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Valid email/phone test passed</span>
+                <span class="reporter-method-output">Invalid Pwd test passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginOperation(9986007114, valid, pran_143, valid)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Valid pwd test failed</span>
+                <span class="reporter-method-output"><img src="file:///E:\Automation\AutomationNested\com.tddtestng.gui.amazon\22-Nov-2020-12-59-14.png" alt=""/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginOperation(9986007114, valid, , blank)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Valid email/phone test passed</span>
+                <span class="reporter-method-output">Blank Pwd test passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -260,18 +662,84 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.AmazonLoginTestDataProviderExcel</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.AmazonLoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">launchSite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginOperation(gattu, invalid_emailid, Gatturohan@134, valid)</span>
-                <span class="method-start">46358 ms</span>
+                <span class="method-name">launchSite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">launchSite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginOperation(9986007114, valid, shwetha, invalid)</span>
+                <span class="method-start">17892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginOperation(9030, invalid_mbno, pran_143, valid)</span>
+                <span class="method-start">22931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginOperation(9986007114, valid, pran_143, valid)</span>
+                <span class="method-start">24267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginOperation(, blank, pran_143, valid)</span>
+                <span class="method-start">26790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginOperation(shw, invalid_emailid, pran_143, valid)</span>
+                <span class="method-start">27880 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">closeSite</span>
-                <span class="method-start">56244 ms</span>
+                <span class="method-start">28243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">31592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">33235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">33868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginOperation(9986007114, valid, , blank)</span>
+                <span class="method-start">37219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">37944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeSite</span>
+                <span class="method-start">49344 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
